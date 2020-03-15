@@ -3,6 +3,9 @@ import React from 'react';
 import { FiSun } from 'react-icons/fi';
 import { FaMoon } from 'react-icons/fa';
 
+// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
+/** @jsx jsx */
+
 import { css, jsx } from '@emotion/core';
 
 interface Props {
