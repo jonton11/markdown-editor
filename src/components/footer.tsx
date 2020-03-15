@@ -1,0 +1,27 @@
+
+import React from 'react';
+
+import { css, jsx } from '@emotion/core';
+
+const footerCss = `
+    padding: 16px 0px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
+    color: #f89541;
+    background: #000;
+`;
+
+const Footer: React.FC = () => {
+    return (
+        <footer>
+            <div className="footer-description" css={css`${footerCss}`}>
+            <span>{`</>`}</span><span> with <a href="https://reactjs.org" target="_blank">React.js</a> &amp; <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a></span>
+            </div>
+        </footer>
+    );
+}
+
+export default Footer;
